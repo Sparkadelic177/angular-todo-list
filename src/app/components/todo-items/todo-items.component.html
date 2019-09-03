@@ -1,0 +1,11 @@
+<!-- This component is being passed props of todo for every todo map from the array
+Each todo element is an object thats being passed to two methods. 
+onToggle to get the line-through the text once completed 
+onDelete for the corresponding todo to delete -->
+
+<div [ngClass]="setClasses()">
+    <p>
+        <input (change)="onToggle(todo)" type="checkbox" [checked]="todo.completed" /> {{todo.title}}
+        <Button (click)="onDelete(todo)" class="del">x</Button>
+    </p>
+</div>

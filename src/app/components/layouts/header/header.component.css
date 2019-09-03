@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+}
+
+.todo {
+    text-align: center;
+    color: white;
+    display: block;
+}
